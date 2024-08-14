@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Optimal Weather Forecast</title>
+</head>
+<body>
+<h1>Optimal väderprognos för Liljeholmen från <span th:text="${data.origin}"></span></h1>
+<p>Datum och tid: <span th:text="${data.timestamp}"></span></p>
+<p>Temperatur: <span th:text="${data.temp}"></span> °C</p>
+<p>Relativ luftfuktighet: <span th:text="${data.humidity}"></span>%</p>
+</body>
+</html>

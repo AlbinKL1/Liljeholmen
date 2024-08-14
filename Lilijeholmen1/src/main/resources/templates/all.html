@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Stations Data</title>
+</head>
+<body>
+<h1>All Stations Data</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Station Name</th>
+        <th>Temperature</th>
+        <th>Humidity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="station : ${stationsData}">
+        <td th:text="${station.stationName}"></td>
+        <td th:text="${station.temperature}"></td>
+        <td th:text="${station.humidity}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
